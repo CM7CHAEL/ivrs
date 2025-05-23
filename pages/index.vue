@@ -6,223 +6,203 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="/assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Dewi</h1>
+        <h1 class="sitename">Empresa</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  <ul>
+    <li><a href="#hero" class="active">Inicio</a></li>
+    <li><a href="#about">Nosotros</a></li>
+    <li><a href="#services">Soluciones</a></li>
+    <!-- <li><a href="#contact">Contacto</a></li> -->
+  </ul>
+  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+</nav>
 
-      <a class="cta-btn" href="index.html#about">Get Started</a>
+<a class="cta-btn" href="#contact">Contacto</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section dark-background">
 
-      <img src="/assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+  <img src="/assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
-      <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#about" class="btn-get-started">Get Started</a>
-          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+  <div class="container d-flex flex-column align-items-center">
+    <h2 data-aos="fade-up" data-aos-delay="100">CONECTA. AUTOMATIZA. ESCALA.</h2>
+    <p data-aos="fade-up" data-aos-delay="200">Impulsamos tu negocio con soluciones de comunicación digital multicanal</p>
+    <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+      <a href="#about" class="btn-get-started">Comienza Ahora</a>
+      <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Ver Video</span></a>
+    </div>
+  </div>
+
+  </section><!-- /Hero Section -->
+
+
+<!-- About Section -->
+<section id="about" class="about section">
+
+<div class="container">
+
+  <div class="row gy-4">
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      <h3>Conectamos empresas con sus clientes a través de canales digitales inteligentes</h3>
+      <img src="/assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
+      <p>Diseñamos soluciones de comunicación que combinan tecnología, velocidad y escalabilidad. Ayudamos a automatizar procesos, fidelizar clientes y optimizar cada punto de contacto.</p>
+      <p>Nuestras plataformas se integran fácilmente con CRMs, ERPs y sistemas propios, permitiendo una gestión centralizada, reportes en tiempo real y mejoras continuas en la experiencia del usuario.</p>
+    </div>
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+      <div class="content ps-0 ps-lg-5">
+        <p class="fst-italic">
+          Más que una herramienta, somos tu partner estratégico en la transformación digital de tus comunicaciones.
+        </p>
+        <ul>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Envío masivo de SMS, WhatsApp, mensajes de voz y notificaciones push.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>IVRs interactivos, bots conversacionales y flujos automatizados.</span></li>
+          <li><i class="bi bi-check-circle-fill"></i> <span>Integraciones vía API con sistemas empresariales para maximizar resultados.</span></li>
+        </ul>
+        <p>
+          Nuestro enfoque es modular, seguro y 100% escalable. Acompañamos a cada cliente desde la planificación hasta el soporte post implementación.
+        </p>
+
+        <div class="position-relative mt-4">
+          <img src="/assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
+          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
         </div>
       </div>
+    </div>
+  </div>
 
-    </section><!-- /Hero Section -->
+</div>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+</section><!-- /About Section -->
 
-      <div class="container">
+<!-- Stats Section -->
+<section id="stats" class="stats section light-background">
 
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-            <img src="/assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="row gy-4">
+
+    <div class="col-lg-3 col-md-6">
+      <div class="stats-item d-flex align-items-center w-100 h-100">
+        <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+        <div>
+          <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Clientes satisfechos</p>
+        </div>
+      </div>
+    </div><!-- End Stats Item -->
+
+    <div class="col-lg-3 col-md-6">
+      <div class="stats-item d-flex align-items-center w-100 h-100">
+        <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+        <div>
+          <span data-purecounter-start="0" data-purecounter-end="340" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Campañas ejecutadas</p>
+        </div>
+      </div>
+    </div><!-- End Stats Item -->
+
+    <div class="col-lg-3 col-md-6">
+      <div class="stats-item d-flex align-items-center w-100 h-100">
+        <i class="bi bi-headset color-green flex-shrink-0"></i>
+        <div>
+          <span data-purecounter-start="0" data-purecounter-end="2600" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Horas de soporte</p>
+        </div>
+      </div>
+    </div><!-- End Stats Item -->
+
+    <div class="col-lg-3 col-md-6">
+      <div class="stats-item d-flex align-items-center w-100 h-100">
+        <i class="bi bi-people color-pink flex-shrink-0"></i>
+        <div>
+          <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Especialistas a tu servicio</p>
+        </div>
+      </div>
+    </div><!-- End Stats Item -->
+
+  </div>
+
+</div>
+
+</section><!-- /Stats Section -->
+
+
+<!-- Services Section -->
+<section id="services" class="services section">
+
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+  <h2>Servicios</h2>
+  <p>Lo que hacemos para impulsar tu negocio</p>
+</div><!-- End Section Title -->
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="row gy-5">
+
+    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+      <div class="service-item">
+        <div class="img">
+          <img src="/assets/img/services-1.jpg" class="img-fluid" alt="Desarrollo Web">
+        </div>
+        <div class="details position-relative">
+          <div class="icon">
+            <i class="bi bi-code-slash"></i>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
+          <a href="service-details.html" class="stretched-link">
+            <h3>Desarrollo de Software</h3>
+          </a>
+          <p>Soluciones a medida en web y móvil. APIs, integraciones y sistemas adaptados a tus procesos reales.</p>
+        </div>
+      </div>
+    </div><!-- End Service Item -->
 
-              <div class="position-relative mt-4">
-                <img src="/assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
-              </div>
-            </div>
+    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+      <div class="service-item">
+        <div class="img">
+          <img src="/assets/img/services-2.jpg" class="img-fluid" alt="Automatización">
+        </div>
+        <div class="details position-relative">
+          <div class="icon">
+            <i class="bi bi-robot"></i>
           </div>
+          <a href="service-details.html" class="stretched-link">
+            <h3>Automatización de Procesos</h3>
+          </a>
+          <p>Digitalizamos tareas repetitivas con bots, flujos automáticos, control de sensores, y sistemas inteligentes.</p>
         </div>
-
       </div>
+    </div><!-- End Service Item -->
 
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-headset color-green flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-people color-pink flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
+    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+      <div class="service-item">
+        <div class="img">
+          <img src="/assets/img/services-3.jpg" class="img-fluid" alt="Publicidad y campañas">
         </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Featured Srvices<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item">
-              <div class="img">
-                <img src="/assets/img/services-1.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-activity"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Nesciunt Mete</h3>
-                </a>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="img">
-                <img src="/assets/img/services-2.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-broadcast"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Eosle Commodi</h3>
-                </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="img">
-                <img src="/assets/img/services-3.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-easel"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Ledo Markt</h3>
-                </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
+        <div class="details position-relative">
+          <div class="icon">
+            <i class="bi bi-megaphone"></i>
+          </div>
+          <a href="service-details.html" class="stretched-link">
+            <h3>Marketing y Envíos Masivos</h3>
+          </a>
+          <p>Campañas de email, WhatsApp y otros canales digitales. Segmentación, diseño y resultados medibles.</p>
         </div>
-
       </div>
+    </div><!-- End Service Item -->
 
-    </section><!-- /Services Section -->
+  </div>
+
+</div>
+
+</section><!-- /Services Section -->
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
@@ -506,7 +486,7 @@
               }
             }
           </script> -->
-          <div class="swiper-wrapper">
+          <!-- <div class="swiper-wrapper">
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -522,7 +502,7 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -538,7 +518,7 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -554,7 +534,7 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -570,7 +550,7 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -586,9 +566,9 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
-          </div>
+          </div> -->
           <div class="swiper-pagination"></div>
         </div>
 
@@ -597,13 +577,12 @@
     </section><!-- /Testimonials Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>CHECK OUR PORTFOLIO</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container">
 
@@ -615,7 +594,7 @@
             <li data-filter=".filter-product">Product</li>
             <li data-filter=".filter-branding">Branding</li>
             <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -629,7 +608,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -641,7 +620,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -653,7 +632,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -665,7 +644,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -677,7 +656,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -689,7 +668,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -701,7 +680,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -713,7 +692,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -725,7 +704,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -737,7 +716,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -749,7 +728,7 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
@@ -761,26 +740,25 @@
                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-          </div><!-- End Portfolio Container -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section> -->
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
         <p>CHECK OUR TEAM</p>
-      </div><!-- End Section Title -->
+      </div> -->
 
-      <div class="container">
+      <!-- <div class="container">
 
         <div class="row gy-5">
 
@@ -798,7 +776,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
@@ -814,7 +792,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
@@ -830,11 +808,11 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
         </div>
 
-      </div>
+      </div> -->
 
     </section><!-- /Team Section -->
 
@@ -843,8 +821,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur</p>
+        <!-- <h2>Contacto</h2> -->
+        <p>Contacto</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -856,24 +834,24 @@
               <div class="col-lg-12">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h3>Dirección</h3>
+                  <p>xxxxxxxxxxx, xxxxxxxxx, NY 535022</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <h3>Teléfono</h3>
+                  <p>+51 999 999 99</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <h3>Email</h3>
+                  <p>soporte@empresa.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -885,27 +863,27 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Tu Email" required="">
                 </div>
+<!-- 
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Mensaje" required="">
+                </div> -->
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="4" placeholder="Mensaje" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Enviar Mensaje</button>
                 </div>
 
               </div>
@@ -929,10 +907,10 @@
             <span class="sitename">Dewi</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>xxxxxxxxxxxxxt</p>
+            <p>xxxx, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+51 9592 29</span></p>
+            <p><strong>Email:</strong> <span>example@empresa.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -945,16 +923,16 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Nosotros</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Soluciones</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Contacto</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Otros Servicios</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
@@ -965,13 +943,13 @@
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <h4>Nuestro boletín</h4>
+          <p>¡Suscríbete a nuestra newsletter y recibe las últimas novedades sobre nuestros productos y servicios!</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            <div class="sent-message">Su solicitud de suscripción ha sido enviada. ¡Gracias!</div>
           </form>
         </div>
 
@@ -979,17 +957,12 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Dewi</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Empresa</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        Distributed by <a href=“https://themewagon.com>ThemeWagon</a>
+        Designed by <a href="#">xxxx</a>
+        Distributed by <a href=“#>xxxx</a>
       </div>
     </div>
-
   </footer>
   </div>
 </template>

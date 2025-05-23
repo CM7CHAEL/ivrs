@@ -22,8 +22,5 @@ export default defineNuxtConfig({
         }
       ]
     }
-  },
-  plugins: [
-    '~/plugins/vendor-scripts.client.ts'
-  ]
+  }
 })
