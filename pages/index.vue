@@ -3,12 +3,12 @@
     <AppHeader />
     <main class="main">
       <section id="hero" class="hero section dark-background">
-        <img src="/assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+        <img src="/assets/img/hero-bg.jpg" alt="">
         <div class="container d-flex flex-column align-items-center">
-          <h2 data-aos="fade-up" data-aos-delay="100">CONECTA. AUTOMATIZA. ESCALA.</h2>
-          <p data-aos="fade-up" data-aos-delay="200">Impulsamos tu negocio con soluciones de comunicación digital
+          <h2>CONECTA. AUTOMATIZA. ESCALA.</h2>
+          <p>Impulsamos tu negocio con soluciones de comunicación digital
             multicanal</p>
-          <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="d-flex mt-4">
             <a href="#about" class="btn-get-started">Comienza Ahora</a>
             <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i
                 class="bi bi-play-circle"></i><span>Ver Video</span></a>
@@ -18,7 +18,7 @@
       <section id="about" class="about section">
         <div class="container">
           <div class="row gy-4">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
               <h3>Conectamos empresas con sus clientes a través de canales digitales inteligentes</h3>
               <img src="/assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
               <p>Diseñamos soluciones de comunicación que combinan tecnología, velocidad y escalabilidad. Ayudamos a
@@ -26,7 +26,7 @@
               <p>Nuestras plataformas se integran fácilmente con CRMs, ERPs y sistemas propios, permitiendo una gestión
                 centralizada, reportes en tiempo real y mejoras continuas en la experiencia del usuario.</p>
             </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="col-lg-6">
               <div class="content ps-0 ps-lg-5">
                 <p class="fst-italic">
                   Más que una herramienta, somos tu partner estratégico en la transformación digital de tus
@@ -56,7 +56,7 @@
       </section>
       <!-- Seccion de Estadisticas -->
       <section id="stats" class="stats section light-background">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
           <div class="row gy-4">
             <div
               v-for="(stat, index) in statsData"
@@ -81,17 +81,16 @@
       </section>
       <!-- Seccion de Servicios -->
       <section id="services" class="services section">
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title">
           <h2>Servicios</h2>
           <p>Lo que hacemos para impulsar tu negocio</p>
         </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
           <div class="row gy-5">
             <div
               v-for="(service, index) in servicesData"
               :key="index"
               class="col-xl-4 col-md-6"
-              data-aos="zoom-in"
               :data-aos-delay="200 + (index * 100)"
             >
               <div class="service-item">
@@ -114,7 +113,7 @@
       </section>
       <!-- Seccion Cientes -->
       <section id="clients" class="clients section light-background">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
           <div class="row gy-4">
             <div
               v-for="(client, index) in clientsData"
@@ -131,10 +130,10 @@
       </section>
       <!-- Seccion de Contacto -->
       <section id="contact" class="contact section">
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title">
           <p>Contacto</p>
         </div>
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
           <div class="row gy-4">
             <div class="col-lg-6">
               <div class="row gy-4">
@@ -145,8 +144,6 @@
                 >
                   <div
                     class="info-item d-flex flex-column justify-content-center align-items-center"
-                    data-aos="fade-up"
-                    :data-aos-delay="info.delay"
                   >
                     <i :class="info.icon"></i>
                     <h3>{{ info.title }}</h3>
@@ -157,8 +154,7 @@
             </div>
             <!-- Formuario -->
             <div class="col-lg-6">
-              <form action="" method="post" data-aos="fade-up"
-                data-aos-delay="500">
+              <form action="" method="post">
                 <div class="row gy-4">
                   <div class="col-md-6">
                     <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required="">
@@ -181,75 +177,14 @@
           </div>
         </div>
       </section>
-      <a :href="`https://api.whatsapp.com/send?phone=+51921497120&text=Hola%20%F0%9F%98%80%2C%20deseo%20cotizar%20el%20servicio%20de%20un%20x`"
-        class="float" target="_blank">
-        <i class="my-float">
-        <img width="32" height="32" src="https://img.icons8.com/ios_filled/512/FFFFFF/whatsapp--v2.png" alt="">
-        </i>
-        <span class="hover-text">¿Podemos ayudarlo?</span>
-      </a>
     </main>
-    <footer id="footer" class="footer dark-background">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
-            <a href="/" class="logo d-flex align-items-center">
-              <span class="sitename">Dewi</span>
-            </a>
-            <div class="footer-contact pt-3">
-              <p>xxxxxxxxxxxxxt</p>
-              <p>xxxx, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+51 9592 29</span></p>
-              <p><strong>Email:</strong> <span>example@empresa.com</span></p>
-            </div>
-            <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Nosotros</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Soluciones</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Contacto</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Otros Servicios</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Nuestro boletín</h4>
-            <p>¡Suscríbete a nuestra newsletter y recibe las últimas novedades sobre nuestros productos y servicios!</p>
-            <form action="#" method="post" >
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
-              </div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Su solicitud de suscripción ha sido enviada. ¡Gracias!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Empresa</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-          Designed by <a href="#">xxxx</a>
-          Distributed by <a href=“#>xxxx</a>
-        </div>
-      </div>
-    </footer>
+     <Footer />
+    <a :href="whatsappLink" class="float" target="_blank">
+      <i class="my-float">
+        <img width="32" height="32" src="https://img.icons8.com/ios_filled/512/FFFFFF/whatsapp--v2.png" alt="">
+      </i>
+      <span class="hover-text">¿Podemos ayudarlo?</span>
+    </a>
   </div>
 </template>
 <script setup>
@@ -332,14 +267,6 @@ const contactInfo = ref([
 <style scoped>
 .float {
   animation: breathe 2s infinite ease-in-out;
-}
-.highlight {
-  font-weight: bold;
-  background: linear-gradient(to right, #D91023 30%, #ffffff 30%, #ffffff 70%, #D91023 70%);
-  /* -webkit-background-clip: text; */
-  -webkit-text-fill-color: transparent;
-  padding: 0 5px;
-  box-decoration-break: clone;
 }
 .float {
   position: fixed;
