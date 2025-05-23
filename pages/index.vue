@@ -190,6 +190,10 @@
 <script setup>
 import { ref } from 'vue'
 
+const whatsappLink = computed(() =>
+  `https://api.whatsapp.com/send?phone=+51921497120&text=Hola%20%F0%9F%98%80%2C%20deseo%20cotizar%20el%20servicio%20de%20un%20x`
+)
+
 const statsData = ref([
   {
     icon: "bi bi-emoji-smile color-blue flex-shrink-0",
