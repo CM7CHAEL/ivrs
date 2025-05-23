@@ -35,7 +35,7 @@
     <p data-aos="fade-up" data-aos-delay="200">Impulsamos tu negocio con soluciones de comunicación digital multicanal</p>
     <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
       <a href="#about" class="btn-get-started">Comienza Ahora</a>
-      <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Ver Video</span></a>
+      <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Ver Video</span></a>
     </div>
   </div>
 
