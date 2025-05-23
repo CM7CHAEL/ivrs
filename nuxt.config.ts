@@ -1,10 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
-  components: true, // (true por defecto, pero puedes definir rutas también)
+  // compatibilityDate: '2025-05-15',
+  // devtools: { enabled: true },
+  // components: true,
   css: [
-    'assets/css/main.css', // tu CSS principal
+    'assets/css/main.css',
     'assets/vendor/bootstrap/css/bootstrap.min.css',
     'assets/vendor/bootstrap-icons/bootstrap-icons.css',
     'assets/vendor/aos/aos.css',
