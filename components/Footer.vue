@@ -62,13 +62,12 @@
 import { ref } from 'vue';
 // Datos de la compañía
 const companyInfo = {
-  name: 'Dewi',
+  name: 'xxxxx',
   address: [
-    'xxxxxxxxxxxxxt',
-    'xxxx, NY 535022'
+    'Jr Francisco de zela 1872 cuarto piso'
   ],
   phone: '+51 9592 29',
-  email: 'example@empresa.com'
+  email: 'informes@rute.com.pe'
 };
 // Enlaces sociales
 const socialLinks = [

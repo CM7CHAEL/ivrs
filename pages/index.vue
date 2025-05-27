@@ -165,12 +165,12 @@
                   <div class="col-md-12">
                     <textarea class="form-control" name="message" rows="4" placeholder="Mensaje" required=""></textarea>
                   </div>
-                  <div class="col-md-12 text-center">
+                  <div class="col-md-12 text-center" v-if="false">
                     <div class="loading">Loading</div>
                     <div class="error-message"></div>
                     <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
-                    <button type="submit">Enviar Mensaje</button>
                   </div>
+                  <button type="submit">Enviar Mensaje</button>
                 </div>
               </form>
             </div>
@@ -251,7 +251,7 @@ const contactInfo = ref([
   {
     icon: "bi bi-geo-alt",
     title: "Dirección",
-    content: "Av. Ejemplo 123, Lima, Perú",
+    content: "Jr Francisco de zela 1872 cuarto piso",
     delay: "200"
   },
   {
@@ -263,7 +263,7 @@ const contactInfo = ref([
   {
     icon: "bi bi-envelope",
     title: "Email",
-    content: "soporte@empresa.com",
+    content: "informes@rute.com.pe",
     delay: "400"
   }
 ])
