@@ -3,7 +3,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <NuxtLink to="/" class="logo d-flex align-items-center me-auto">
         <!-- <h1 class="sitename">Empresa</h1> -->
-        <img width="180" height="auto" src="/assets/logo.jpeg" alt="">
+        <img width="180" height="100" src="/assets/logo.png" alt="">
       </NuxtLink>
       <nav id="navmenu" class="navmenu">
         <ul>

@@ -62,7 +62,7 @@
 import { ref } from 'vue';
 // Datos de la compañía
 const companyInfo = {
-  name: 'xxxxx',
+  name: 'Rute',
   address: [
     'Jr Francisco de zela 1872 cuarto piso'
   ],
