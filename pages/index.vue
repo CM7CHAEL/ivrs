@@ -219,12 +219,6 @@ const statsData = ref([
 
 const servicesData = ref([
   {
-    image: "/assets/img/services-1.jpg",
-    icon: "bi bi-code-slash",
-    title: "Desarrollo de Software",
-    description: "Soluciones a medida en web y móvil. APIs, integraciones y sistemas adaptados a tus procesos reales."
-  },
-  {
     image: "/assets/img/services-2.jpg",
     icon: "bi bi-robot",
     title: "Automatización de Procesos",
