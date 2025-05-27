@@ -2,7 +2,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <NuxtLink to="/" class="logo d-flex align-items-center me-auto">
-        <img width="180" height="100" src="/assets/logo.png" alt="">
+        <img width="180" height="100" src="/logo.png" alt="">
       </NuxtLink>
       <nav id="navmenu" class="navmenu">
         <ul>
