@@ -17,7 +17,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-4 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li v-for="link in usefulLinks" :key="link.text">
@@ -25,26 +25,13 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-4 col-md-3 footer-links">
           <h4>Otros Servicios</h4>
           <ul>
             <li v-for="service in otherServices" :key="service.text">
               <i class="bi bi-chevron-right"></i> <a :href="service.url">{{ service.text }}</a>
             </li>
           </ul>
-        </div>
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Nuestro boletín</h4>
-          <p>{{ newsletterText }}</p>
-          <form @submit.prevent="handleSubmit">
-            <div class="newsletter-form">
-              <input type="email" name="email" v-model="email" required placeholder="Tu correo electrónico">
-              <input type="submit" value="Subscribe">
-            </div>
-            <div v-if="loading" class="loading">Loading</div>
-            <div v-if="error" class="error-message">{{ error }}</div>
-            <div v-if="success" class="sent-message">{{ successMessage }}</div>
-          </form>
         </div>
       </div>
     </div>
@@ -86,11 +73,11 @@ const usefulLinks = [
 ];
 // Otros servicios
 const otherServices = [
-  { text: 'Web Design', url: '#' },
-  { text: 'Web Development', url: '#' },
-  { text: 'Product Management', url: '#' },
-  { text: 'Marketing', url: '#' },
-  { text: 'Graphic Design', url: '#' }
+  { text: 'Envío masivo de SMS', url: '#' },
+  { text: 'WhatsApp', url: '#' },
+  { text: 'Mensajes de voz', url: '#' },
+  { text: 'IVRs interactivos', url: '#' },
+  { text: 'Bots conversacionales', url: '#' }
 ];
 // Créditos
 const credits = {
@@ -99,29 +86,10 @@ const credits = {
   distributor: 'xxxx',
   distributorUrl: '#'
 };
-// Newsletter
-const newsletterText = '¡Suscríbete a nuestra newsletter y recibe las últimas novedades sobre nuestros productos y servicios!';
-const successMessage = 'Su solicitud de suscripción ha sido enviada. ¡Gracias!';
 // Lógica del formulario
 const email = ref('');
-const loading = ref(false);
 const error = ref('');
 const success = ref('');
-const handleSubmit = async () => {
-  loading.value = true;
-  error.value = '';
-  success.value = '';
-  try {
-    // Simular envío del formulario
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    success.value = successMessage;
-    email.value = '';
-  } catch (err) {
-    error.value = 'Ocurrió un error al enviar el formulario';
-  } finally {
-    loading.value = false;
-  }
-};
 </script>
 <style scoped>
 .footer {
@@ -188,42 +156,6 @@ const handleSubmit = async () => {
 .footer-links ul a:hover {
   color: #fff;
   padding-left: 5px;
-}
-.footer-newsletter {
-  position: relative;
-}
-
-.footer-newsletter p {
-  margin-bottom: 20px;
-}
-.newsletter-form {
-  display: flex;
-}
-.newsletter-form input[type="email"] {
-  padding: 10px 15px;
-  width: 70%;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  outline: none;
-}
-.newsletter-form input[type="submit"] {
-  padding: 10px 15px;
-  background: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-.newsletter-form input[type="submit"]:hover {
-  background: #d8091c;
-}
-
-.loading,
-.error-message,
-.sent-message {
-  margin-top: 10px;
-  font-size: 14px;
 }
 
 .error-message {
