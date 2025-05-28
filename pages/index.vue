@@ -10,8 +10,8 @@
             multicanal</p>
           <div class="d-flex mt-4">
             <a href="#about" class="btn-get-started">Comienza Ahora</a>
-            <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i
-                class="bi bi-play-circle"></i><span>Ver Video</span></a>
+              <!-- <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i
+                  class="bi bi-play-circle"></i><span>Ver Video</span></a> -->
           </div>
         </div>
       </section>
@@ -86,11 +86,11 @@
           <p>Lo que hacemos para impulsar tu negocio</p>
         </div>
         <div class="container">
-          <div class="row gy-5">
+          <div class="row gy-6">
             <div
               v-for="(service, index) in servicesData"
               :key="index"
-              class="col-xl-4 col-md-6"
+              class="col-xl-6 col-md-6"
               :data-aos-delay="200 + (index * 100)"
             >
               <div class="service-item">
