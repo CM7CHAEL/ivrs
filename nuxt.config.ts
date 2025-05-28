@@ -1,8 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // compatibilityDate: '2025-05-15',
-  // devtools: { enabled: true },
-  // components: true,
   css: [
     'assets/css/main.css',
     'assets/vendor/bootstrap/css/bootstrap.min.css',
@@ -13,7 +10,12 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      title: '𝕽ute',
       link: [
+        // Favicon
+        { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
+
+        // Google Fonts
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
