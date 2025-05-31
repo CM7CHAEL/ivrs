@@ -178,12 +178,12 @@
         </div>
       </section>
     </main>
-     <Footer />
+    <Footer />
     <a :href="whatsappLink" class="float" target="_blank">
       <i class="my-float">
         <img width="32" height="32" src="https://img.icons8.com/ios_filled/512/FFFFFF/whatsapp--v2.png" alt="">
       </i>
-      <span class="hover-text">¿Podemos ayudarlo?</span>
+      <span class="hover-text">Hola, deseo más información de los servicios.</span>
     </a>
   </div>
 </template>
@@ -191,7 +191,7 @@
 import { ref } from 'vue'
 
 const whatsappLink = computed(() =>
-  `https://api.whatsapp.com/send?phone=+51921497120&text=Hola%20%F0%9F%98%80%2C%20deseo%20cotizar%20el%20servicio%20de%20un%20x`
+  `https://api.whatsapp.com/send?phone=+51986371132&text=Hola,%20deseo%20más%20información%20de%20los%20servicios.`
 )
 
 const statsData = ref([
@@ -294,6 +294,7 @@ const contactInfo = ref([
 .float:hover .hover-text {
   visibility: visible;
   opacity: 1;
+  white-space: nowrap;
 }
 .float .hover-text {
   visibility: hidden;
@@ -305,10 +306,11 @@ const contactInfo = ref([
   transform: translateX(-10px) translateY(-50%);
   background-color: #34b7f1;
   color: #FFF;
-  padding: 6px 10px;
+  padding: 8px 12px;
   border-radius: 15px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-  font-size: 12px;
+  font-size: 13px;
   z-index: 101;
 }
+
 </style>

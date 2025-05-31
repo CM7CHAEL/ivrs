@@ -36,11 +36,10 @@
       </div>
     </div>
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ companyInfo.name }}</strong> 
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ companyInfo.name }}</strong>
         <span>All Rights Reserved</span></p>
       <div class="credits">
-        Designed by <a :href="credits.designerUrl">{{ credits.designer }}</a>
-        Distributed by <a :href="credits.distributorUrl">{{ credits.distributor }}</a>
+        <a :href="credits.designerUrl">{{ credits.designer }}</a>
       </div>
     </div>
   </footer>
@@ -81,10 +80,8 @@ const otherServices = [
 ];
 // Créditos
 const credits = {
-  designer: 'xxxx',
+  designer: 'Rute',
   designerUrl: '#',
-  distributor: 'xxxx',
-  distributorUrl: '#'
 };
 // Lógica del formulario
 const email = ref('');
