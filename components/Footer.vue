@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Links</h4>
           <ul>
             <li v-for="link in usefulLinks" :key="link.text">
               <i class="bi bi-chevron-right"></i> <a :href="link.url">{{ link.text }}</a>
@@ -36,11 +36,10 @@
       </div>
     </div>
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ companyInfo.name }}</strong> 
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">{{ companyInfo.name }}</strong>
         <span>All Rights Reserved</span></p>
       <div class="credits">
-        Designed by <a :href="credits.designerUrl">{{ credits.designer }}</a>
-        Distributed by <a :href="credits.distributorUrl">{{ credits.distributor }}</a>
+        <!-- <a :href="credits.designerUrl">{{ credits.designer }}</a> -->
       </div>
     </div>
   </footer>
@@ -53,7 +52,7 @@ const companyInfo = {
   address: [
     'Jr Francisco de zela 1872 cuarto piso'
   ],
-  phone: '+51 9592 29',
+  phone: '+51 986 371 132',
   email: 'informes@rute.com.pe'
 };
 // Enlaces sociales
@@ -81,10 +80,8 @@ const otherServices = [
 ];
 // Créditos
 const credits = {
-  designer: 'xxxx',
+  designer: 'Rute',
   designerUrl: '#',
-  distributor: 'xxxx',
-  distributorUrl: '#'
 };
 // Lógica del formulario
 const email = ref('');
