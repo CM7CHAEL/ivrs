@@ -154,25 +154,30 @@
             </div>
             <!-- Formuario -->
             <div class="col-lg-6">
-              <form action="" method="post">
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required="">
-                  </div>
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Tu Email" required="">
-                  </div>
-                  <div class="col-md-12">
-                    <textarea class="form-control" name="message" rows="4" placeholder="Mensaje" required=""></textarea>
-                  </div>
-                  <div class="col-md-12 text-center" v-if="false">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
-                  </div>
-                  <button type="submit">Enviar Mensaje</button>
+              <form @submit.prevent="submitForm">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <input type="text" v-model="form.name" class="form-control" placeholder="Tu Nombre" required />
                 </div>
-              </form>
+                <div class="col-md-6">
+                  <input type="email" v-model="form.email" class="form-control" placeholder="Tu Email" required />
+                </div>
+                <div class="col-md-12">
+                  <textarea v-model="form.message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading" v-if="isSending">Enviando...</div>
+                  <div class="error-message" v-if="errorMessage">{{ errorMessage }}</div>
+                  <div class="sent-message" v-if="successMessage">{{ successMessage }}</div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit" :disabled="isSending">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+
             </div>
           </div>
         </div>
@@ -189,6 +194,7 @@
 </template>
 <script setup>
 import { ref } from 'vue'
+import axios from 'axios'
 
 const whatsappLink = computed(() =>
   `https://api.whatsapp.com/send?phone=+51986371132&text=Hola,%20deseo%20más%20información%20de%20los%20servicios.`
@@ -261,6 +267,48 @@ const contactInfo = ref([
     delay: "400"
   }
 ])
+
+// Formulario de contacto
+const form = ref({
+  name: '',
+  email: '',
+  message: ''
+})
+
+const isSending = ref(false)
+const successMessage = ref('')
+const errorMessage = ref('')
+
+const submitForm = async () => {
+  isSending.value = true
+  successMessage.value = ''
+  errorMessage.value = ''
+
+  const payload = {
+    user: "rute",
+    pass: "37e7e951f14b045e",
+    mensaje: `Nombre: ${form.value.name}, correo: ${form.value.email}, Asunto: ${form.value.message}`,
+    destino: "informes@rute.com.pe",
+    asunto: "Información de servicio"
+  }
+
+  try {
+    const response = await axios.post("http://ecorreo.omnicron.pe:8083", payload)
+    if (response.status === 200) {
+      successMessage.value = "Tu mensaje ha sido enviado. ¡Gracias!"
+      form.value.name = ''
+      form.value.email = ''
+      form.value.message = ''
+    } else {
+      errorMessage.value = "Hubo un error al enviar el mensaje."
+    }
+  } catch (err) {
+    console.error(err)
+    errorMessage.value = "No se pudo conectar con el servidor."
+  } finally {
+    isSending.value = false
+  }
+}
 </script>
 <style scoped>
 .float {
