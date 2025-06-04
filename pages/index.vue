@@ -293,7 +293,7 @@ const submitForm = async () => {
   }
 
   try {
-    const response = await axios.post("http://ecorreo.omnicron.pe:8083", payload)
+    const response = await axios.post("https://ecorreo.omnicron.pe:8083", payload)
     if (response.status === 200) {
       successMessage.value = "Tu mensaje ha sido enviado. ¡Gracias!"
       form.value.name = ''
