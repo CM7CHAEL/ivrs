@@ -285,15 +285,15 @@ const submitForm = async () => {
   errorMessage.value = ''
 
   const payload = {
-    user: "rute",
-    pass: "37e7e951f14b045e",
+    user: "hotelvistaverde",
+    pass: "36e5e490f14b031e",
     mensaje: `Nombre: ${form.value.name}, correo: ${form.value.email}, Asunto: ${form.value.message}`,
     destino: "informes@rute.com.pe",
     asunto: "Información de servicio"
   }
 
   try {
-    const response = await axios.post("https://ecorreo.omnicron.pe:8083", payload)
+    const response = await axios.post("https://ecorreo.omnicron.pe", payload)
     if (response.status === 200) {
       successMessage.value = "Tu mensaje ha sido enviado. ¡Gracias!"
       form.value.name = ''
